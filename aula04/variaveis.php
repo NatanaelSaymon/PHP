@@ -4,7 +4,7 @@
     <head>
         <title>Ola mundo</title>
         <meta charset="utf-8">
-
+        <link rel="stylesheet" href="_css/estilo.css" type="text/css">
         <style>
             *{
                 font-family: arial;
@@ -13,12 +13,15 @@
     </head>
 
     <body>
-        <h1>Variaveis em PHP</h1>
+        <div>
+            <h1>Variaveis em PHP</h1>
 
-        <?php 
-            $numero = 28;
-            $nome = "Natanael";
-            echo $nome, $numero;
-        ?>
+            <?php 
+                $idade = 28;
+                $nome = (string)"Natanael";
+                echo $nome. " tem ". $idade. " anos! <br>";
+                echo "$nome tem $idade anos!";
+            ?>
+        </div>
     </body>
 </html>
